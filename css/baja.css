@@ -1,3 +1,7 @@
+#main-nav {
+    background: rgba(0, 0, 0, 0.2);
+}
+
 header {
     position: relative;
     background-color: black;
