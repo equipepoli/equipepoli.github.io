@@ -56,10 +56,50 @@ section {
     padding: 20px 0;
 }
 
+span.anchor {
+    display: block;
+    visibility: hidden;
+    position: relative;
+    top: -65px;
+}
+
+.text-primary {
+    color: #203F9A !important;
+}
+
 .blockquote {
     font-size: 1rem;
 }
 
 .navbar-dark .navbar-nav .nav-link {
     color: rgb(255, 255, 255);
+}
+
+.dotted {
+    text-decoration: underline dotted;
+}
+
+.familiabaja .card {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+    border-radius: 1rem;
+}
+
+.familiabaja .btn {
+    border-radius: 1.5rem;
+}
+
+.familiabaja small {
+    font-size: 0.9rem
+}
+
+@media (min-width: 992px) {
+    .familiabaja .card:hover {
+        margin-top: -.25rem;
+        margin-bottom: .25rem;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    }
+
+    .familiabaja .card:hover .btn {
+        opacity: 1;
+    }
 }
