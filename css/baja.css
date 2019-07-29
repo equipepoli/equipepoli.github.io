@@ -60,11 +60,7 @@ span.anchor {
     display: block;
     visibility: hidden;
     position: relative;
-    top: -63px;
-}
-
-.text-primary {
-    color: #203F9A !important;
+    top: -62px;
 }
 
 .blockquote {
@@ -107,4 +103,12 @@ section.familiabaja {
     .familiabaja .card:hover .btn {
         opacity: 1;
     }
+}
+
+.height-lim {
+    max-height:  50px;
+}
+
+.galeria img {
+    max-height: 100px;
 }

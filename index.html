@@ -18,8 +18,6 @@
   <!-- Fancybox -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
-  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   <!-- CSS customizado -->
   <link href="css/baja.css" rel="stylesheet">
 
@@ -86,22 +84,65 @@
   <section>
     <div class="container">
       <h1><strong>Quem <span class="text-primary">Somos</span></strong></h1>
-      <div class="row">
-        <div class="col-lg-7 col-xl-8 text-justify">
-          <p>
-            Somos alunos da <u class="dotted">Escola Politécnica da Universidade de São
-              Paulo</u> que buscam desenvolvimento pessoal por meio do exercício de competências técnicas e
-            interpessoais associadas a projetos
-            práticos de engenharia. Utilizamos o conhecimento adquirido dentro e fora da sala de aula
-            em diversas áreas do desenvolvimento do nosso trabalho, abrangendo os mais diversos cursos
-            de engenharia oferecidos pela Escola ao longo de todo o ciclo de projeto, desde o planejamento
-            da Equipe até a validação prática. Nossos objetivos pessoais convergem em provocar um
-            impacto positivo na engenharia brasileira através de comprometimento, busca por resultados e
-            inovação.
-          </p>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="sobre-nos-tab" data-toggle="tab" href="#sobre-nos" role="tab"
+            aria-controls="sobre-nos" aria-selected="true">Sobre nós</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="bajasae-tab" data-toggle="tab" href="#bajasae" role="tab" aria-controls="bajasae"
+            aria-selected="false">Baja SAE</a>
+        </li>
+      </ul>
+      <div class="tab-content mt-2" id="myTabContent">
+        <div class="tab-pane fade show active" id="sobre-nos" role="tabpanel" aria-labelledby="sobre-nos-tab">
+          <div class="row">
+            <div class="col-lg-7 col-xl-8 text-justify">
+              <p>
+                <span style="margin-left:30px"></span>Somos alunos da <u class="dotted">Escola Politécnica da
+                  Universidade de São
+                  Paulo</u> que buscam desenvolvimento pessoal por meio do exercício de competências técnicas e
+                interpessoais associadas a projetos
+                práticos de engenharia. Utilizamos o conhecimento adquirido dentro e fora da sala de aula
+                em diversas áreas do desenvolvimento do nosso trabalho, abrangendo os mais diversos cursos
+                de engenharia oferecidos pela Escola ao longo de todo o ciclo de projeto, desde o planejamento
+                da Equipe até a validação prática. Nossos objetivos pessoais convergem em provocar um
+                impacto positivo na engenharia brasileira através de comprometimento, busca por resultados e
+                inovação.<br>
+                <span style="margin-left:30px"></span>É a partir desses objetivos que a Equipe Poli de Baja, fundada em
+                2001, exerce o ciclo completo de
+                engenharia de protótipos monopostos off-road para competições universitárias, o famoso Baja SAE. Durante
+                esses 15 ciclos, enfrentamos muitos desafios, gerando conquistas nacionais e internacionais. Hoje a
+                equipe é Bicampeã Nacional na Baja SAE Brasil e 2x TOP10 em competições mundiais - Baja SAE
+                International.
+              </p>
+            </div>
+            <div class="col-lg-5 col-xl-4">
+              <img class="img-fluid rounded" src="images/sobre/membros.png" alt="Membros da Equipe">
+            </div>
+          </div>
         </div>
-        <div class="col-lg-5 col-xl-4">
-          <img class="img-fluid rounded" src="images/membros.png" alt="Membros da Equipe">
+        <div class="tab-pane fade text-justify" id="bajasae" role="tabpanel" aria-labelledby="bajasae-tab">
+          <div class="row">
+            <div class="col-lg-5 col-xl-4">
+              <img class="img-fluid rounded my-auto" src="images/sobre/bajasae.jpg" alt="">
+            </div>
+            <div class="col-lg-7 col-xl-8 text-justify">
+              <p>
+                O projeto Baja SAE é um desafio lançado aos estudantes de engenharia que oferece a chance de aplicar na
+                prática os mais diversos conhecimentos adquiridos (ou não) em sala de aula. Por meio de competições
+                regionais, nacionais e internacionais, as equipes universitárias, com seus respectivos protótipos, são
+                avaliadas em provas estáticas e dinâmicas.
+                Nas provas estáticas, as equipes devem apresentar um relatório técnico, previamente entregue nas
+                competições, além de apresentar os subsistemas do veículo e da equipe para juízes especialistas no
+                assunto. Nas provas dinâmicas, o desempenho equilibrado do veículo é posto à tona. O protótipo é testado
+                em provas específicas (Aceleração, Velocidade, Manobrabilidade, Tração e Suspension&Traction) e no
+                enduro de resistência. Para continuar sempre em posições de destaque dentro e fora do Brasil,os membros
+                da Equipe Poli de Baja devem não só exercer todo o ciclo de projeto do veículo, mas também gerar apoio
+                financeiro e gerenciar todo o planejamento de uma equipe com mais de 25 politécnicos.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -111,17 +152,55 @@
   <span class="anchor" id="equipe"></span>
   <section>
     <div class="container">
-      <div class="row">
-        <div class="col text-center">
-          <h1><strong>Nossa <span class="text-primary">Equipe</span></strong></h1>
-          <p>
-            É a partir desses objetivos que a Equipe Poli de Baja, fundada em 2001, exerce o ciclo
-            completo de engenharia de protótipos monopostos off-road para competições universitárias,
-            o famoso Baja SAE. Durante esses 15 ciclos, enfrentamos muitos desafios, gerando conquistas
-            nacionais e internacionais. Hoje a equipe é Bicampeã Nacional na Baja SAE Brasil e 2x TOP10
-            em competições mundiais - Baja SAE International. Veja abaixo alguns depoimentos dos nossos
-            membros!
-          </p>
+      <h1 class="text-center"><strong>Nossa <span class="text-primary">Equipe</span></strong></h1>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div id="carouselEquipe" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselEquipe" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselEquipe" data-slide-to="1"></li>
+              <li data-target="#carouselEquipe" data-slide-to="2"></li>
+              <li data-target="#carouselEquipe" data-slide-to="3"></li>
+              <li data-target="#carouselEquipe" data-slide-to="4"></li>
+              <li data-target="#carouselEquipe" data-slide-to="5"></li>
+              <li data-target="#carouselEquipe" data-slide-to="6"></li>
+              <li data-target="#carouselEquipe" data-slide-to="7"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="images/equipe/gestão.jpg" alt="Gestão">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/equipe/projeto1.jpg" alt="Projeto1">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/equipe/projeto2.jpg" alt="Projeto2">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/equipe/projeto3.jpg" alt="Projeto3">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/equipe/planejamento.jpg" alt="Planejamento">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/equipe/conselheiros1.jpg" alt="Conselheiros1">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/equipe/conselheiros2.jpg" alt="Conselheiros2">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/equipe/conselheiros3.jpg" alt="Conselheiros3">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselEquipe" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselEquipe" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Próximo</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -280,27 +359,26 @@
 
   <!-- GALERIA -->
   <span class="anchor" id="galeria"></span>
-  <section>
+  <section class="galeria">
     <div class="container">
       <h1 class="text-center"><strong>Gale<span class="text-primary">ria</span></strong></h1>
-      <div class="galeria">
-        <div class="mx-1"><a href="images/header.jpg" data-fancybox="roadtrip"><img class="img-fluid rounded"
+      <div class="row justify-content-center">
+        <div class="col-auto mb-3"><a href="images/header.jpg" data-fancybox="galeria"><img class="rounded"
               src="images/header.jpg"></a></div>
-        <div class="mx-1"><a href="images/membros.png" data-fancybox="roadtrip"><img class="img-fluid rounded"
+        <div class="col-auto mb-3"><a href="images/membros.png" data-fancybox="galeria"><img class="rounded"
               src="images/membros.png"></a></div>
-        <div class="mx-1"><a href="images/header.jpg" data-fancybox="roadtrip"><img class="img-fluid rounded"
+        <div class="col-auto mb-3"><a href="images/header.jpg" data-fancybox="galeria"><img class="rounded"
               src="images/header.jpg"></a></div>
-        <div class="mx-1"><a href="images/header.jpg" data-fancybox="roadtrip"><img class="img-fluid rounded"
+        <div class="col-auto mb-3"><a href="images/header.jpg" data-fancybox="galeria"><img class="rounded"
               src="images/header.jpg"></a></div>
-        <div class="mx-1"><a href="images/header.jpg" data-fancybox="roadtrip"><img class="img-fluid rounded"
+        <div class="col-auto mb-3"><a href="images/header.jpg" data-fancybox="galeria"><img class="rounded"
               src="images/header.jpg"></a></div>
-        <div class="mx-1"><a href="images/header.jpg" data-fancybox="roadtrip"><img class="img-fluid rounded"
+        <div class="col-auto mb-3"><a href="images/header.jpg" data-fancybox="galeria"><img class="rounded"
               src="images/header.jpg"></a></div>
-        <div class="mx-1"><a href="images/header.jpg" data-fancybox="roadtrip"><img class="img-fluid rounded"
+        <div class="col-auto mb-3"><a href="images/header.jpg" data-fancybox="galeria"><img class="rounded"
               src="images/header.jpg"></a></div>
-        <div class="mx-1"><a href="images/header.jpg" data-fancybox="roadtrip"><img class="img-fluid rounded"
+        <div class="col-auto mb-3"><a href="images/header.jpg" data-fancybox="galeria"><img class="rounded"
               src="images/header.jpg"></a></div>
-
       </div>
     </div>
   </section>
@@ -315,64 +393,63 @@
         <div class="col my-auto"><img class="img-fluid" src="images/logos/amigos-da-poli.png"></div>
       </div>
       <div class="row text-center mx-auto my-3">
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/by-collela.png"></div>
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/esss.png"></div>
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/isorecort.png"></div>
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/tekbond.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/by-collela.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/esss.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/isorecort.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/tekbond.png"></div>
       </div>
       <div class="row text-center mx-auto my-3">
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/ciser.png"></div>
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/flow.png"></div>
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/jcr.png"></div>
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/arco-iris.png"/></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/ciser.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/flow.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/jcr.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/arco-iris.png" /></div>
       </div>
       <div class="row text-center mx-auto my-3">
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/camserv.png"></div>
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/opencadd.png"></div>
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/ifm.png"></div>
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/msc.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/camserv.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/opencadd.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/ifm.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/msc.png"></div>
       </div>
       <div class="row text-center mx-auto my-3">
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/dremel.png"></div>
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/anod-limeira.png"></div>
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/grud.png"></div>
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/tabano.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/dremel.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/anod-limeira.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/grud.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/tabano.png"></div>
       </div>
       <div class="row text-center mx-auto my-3">
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/fdte.png"></div>
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/parlock.png"></div>
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/igus.png"></div>
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/st.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/fdte.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/parlock.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/igus.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/st.png"></div>
       </div>
       <div class="row text-center mx-auto my-3">
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/nsk.png"></div>
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/mitutoyo.png"></div>
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/plastvac.png"></div>
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/itc.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/nsk.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/mitutoyo.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/plastvac.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/itc.png"></div>
       </div>
       <div class="row text-center mx-auto my-3">
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/sbu.png"></div>
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/usitubos.png"></div>
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/vallourec.png"></div>
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/vtech.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/sbu.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/usitubos.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/vallourec.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/vtech.png"></div>
       </div>
       <div class="row text-center mx-auto my-3">
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/flying-circus.png"></div>
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/lambertex.png"></div>
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/ska.png"></div>
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/styroplast.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/flying-circus.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/lambertex.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/ska.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/styroplast.png"></div>
       </div>
       <div class="row text-center mx-auto my-3">
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/virtueyes.png"></div>
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/sandvik.png"></div>
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/rentradius.png"></div>
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/allcab.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/virtueyes.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/sandvik.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/rentradius.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/allcab.png"></div>
       </div>
       <div class="row text-center mx-auto my-3">
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/mahle.png"></div>
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/gear.png"></div>
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/poli.png"></div>
-        <div class="col my-auto"><img class="img-fluid" src="images/logos/usp.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/mahle.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/poli.png"></div>
+        <div class="col my-auto"><img class="img-fluid height-lim" src="images/logos/usp.png"></div>
       </div>
     </div>
   </section>
@@ -381,7 +458,13 @@
   <span class="anchor" id="familiabaja"></span>
   <section class="familiabaja">
     <div class="container">
-      <h1 class="text-center text-white"><strong>Família <span class="text-primary">Baja</span></strong></h1>
+      <h1 class="text-center text-white"><strong>Família <span style="color:#203F9A">Baja</span></strong></h1>
+      <p class="text-center text-white">
+        Para continuarmos nos superando em busca de novas conquistas, criamos o programa Família Baja. O programa
+        consiste em uma plataforma que conecta a equipe com seus ex-membros, familiares e todos os entusiastas do nosso
+        projeto, através de um pagamento de uma mensalidade, que visa suportar as atividades da equipe. Confira
+        abaixo os depoimentos de membros antigos da equipe e veja por que o Baja é tão importante para nós!
+      </p>
       <div class="row justify-content-center my-4 familiabaja">
         <div class="col-xl-3 col-md-6 mb-3">
           <div class="card card-body">
@@ -395,7 +478,7 @@
               <li class="text-muted"><span class="fas fa-times fa-li"></span>Porta-retrato da Família Baja</li>
               <li class="text-muted"><span class="fas fa-times fa-li"></span>Camiseta oficial da equipe</li>
             </ul>
-            <a href="#familiabaja" class="btn btn-block btn-primary round-border text-uppercase">Doar</a>
+            <a href="#familiabaja" class="btn btn-block btn-primary round-border text-uppercase">Em breve</a>
           </div>
         </div>
         <div class="col-xl-3 col-md-6 mb-3">
@@ -410,7 +493,7 @@
               <li class="text-muted"><span class="fas fa-times fa-li"></span>Porta-retrato da Família Baja</li>
               <li class="text-muted"><span class="fas fa-times fa-li"></span>Camiseta oficial da equipe</li>
             </ul>
-            <a href="#familiabaja" class="btn btn-block btn-primary round-border text-uppercase">Doar</a>
+            <a href="#familiabaja" class="btn btn-block btn-primary round-border text-uppercase">Em breve</a>
           </div>
         </div>
         <div class="col-xl-3 col-md-6 mb-3">
@@ -425,7 +508,7 @@
               <li><span class="fas fa-check fa-li"></span>Porta-retrato da Família Baja</li>
               <li class="text-muted"><span class="fas fa-times fa-li"></span>Camiseta oficial da equipe</li>
             </ul>
-            <a href="#familiabaja" class="btn btn-block btn-primary round-border text-uppercase">Doar</a>
+            <a href="#familiabaja" class="btn btn-block btn-primary round-border text-uppercase">Em breve</a>
           </div>
         </div>
         <div class="col-xl-3 col-md-6 mb-3">
@@ -440,7 +523,7 @@
               <li><span class="fas fa-check fa-li"></span>Porta-retrato da Família Baja</li>
               <li><span class="fas fa-check fa-li"></span>Camiseta oficial da equipe</li>
             </ul>
-            <a href="#familiabaja" class="btn btn-block btn-primary round-border text-uppercase">Doar</a>
+            <a href="#familiabaja" class="btn btn-block btn-primary round-border text-uppercase">Em breve</a>
           </div>
         </div>
       </div>
@@ -448,7 +531,7 @@
   </section>
   <section>
     <div class="container">
-      <h1 class="text-center"><strong>Depoimentos de <span class="text-primary">Ex-Membros</span></strong></h1>
+      <h1 class="text-center"><strong>Depoi<span class="text-primary">mentos</span></strong></h1>
       <div class="row">
         <div class="col-lg-4 text-center">
           <div class="card card-body card-text">
@@ -549,44 +632,6 @@
   <script src="js/bootstrap.min.js"></script>
   <!-- Fancybox -->
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
-  <script type="text/javascript">
-    $('.galeria').slick({
-      dots: true,
-      infinite: false,
-      speed: 300,
-      slidesToShow: 4,
-      slidesToScroll: 4,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-    });
-  </script>
 </body>
 
 </html>
