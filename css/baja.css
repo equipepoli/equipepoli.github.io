@@ -1,5 +1,13 @@
-#main-nav {
+.index-nav {
     background: rgba(0, 0, 0, 0.4);
+}
+
+.galeria-nav {
+    background: #343a40;
+}
+
+html {
+    background: #343a40;
 }
 
 header {
