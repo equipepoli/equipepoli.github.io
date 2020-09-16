@@ -10,6 +10,11 @@ html {
     background: #343a40;
 }
 
+#center{
+  text-align: center;
+}
+
+
 header {
     position: relative;
     background-color: black;
@@ -18,7 +23,9 @@ header {
     width: 100%;
     overflow: hidden;
 }
-
+#center{
+    align-content: center;
+}
 header video {
     position: absolute;
     top: 50%;
@@ -84,8 +91,7 @@ span.anchor {
 }
 
 section.familiabaja {
-    background: #007bff;
-    background: linear-gradient(to right, #0062E6, #33AEFF);
+    background: #161650;
   }
 
 .familiabaja .card {
@@ -119,4 +125,15 @@ section.familiabaja {
 
 .galeria img {
     max-height: 100px;
+}
+.height-ouro {
+    max-height:100px;
+}
+
+.height-master {
+    height:110px;
+}
+
+.height-prata {
+    max-height: 70px;
 }
